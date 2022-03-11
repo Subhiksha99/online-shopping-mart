@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Subhish electronics shopping</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            .header{
+                width: 100%;
+                height: 50;
+  border: 10px dashed red;
+  animation-name: example;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+            }
+   @keyframes example {
+  0%   {border-color: #ff0028;}
+  25%  {border-color: #7d3cff;}
+  50%  {border-color: #161748;}
+  100% {border-color: #39a0ca;}
+}
+            .tab{
+                background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+  }
+  .catalogue{
+     
+  }
+  .row{
+       border:5px solid black;
+      width:100;
+      height:100;
+      float:left;
+  }
+  
+  .container{
+      border: 1px ;
+      width: 500px;
+      height: 500px;
+      background-color: red;
+      float:none;
+      position:absolute;
+      left:50 px;
+      right:100 px;
+      
+  }
+  .close-btn {
+ position: absolute;
+ right: 20px;
+ top: 20px;
+ width: 30px;
+ height: 30px;
+ color: white;
+ font-size: 30px;
+ border-radius: 50%;
+ padding: 2px 5px 7px 5px;
+ background: #292929;
+ box-shadow:  5px 5px 15px #1e1e1e, 
+             -5px -5px 15px #1e1e1e;
+ }
+ .open-button {
+  color: white;
+  padding: 16px 20px;
+ 
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+</style>
+    </head>
+    
+    <body>
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script>
+            var req = new XMLHttpRequest();
+var headers = req.getAllResponseHeaders().toLowerCase();
+alert(headers);
+         var cnt=0;  
+        function togglePopup() {
+            console.log("hello");
+ document.getElementById("popup-1")
+  .classList.toggle("active");
+}
+function openform()
+{document.getElementById("myform").style.display="block";
+    document.getElementById("login").style.display="none";
+    
+}
+function closeform()
+{document.getElementById("myform").style.display="none";
+}
+function signedin(){
+    document.getElementById("login").style.display="none";
+    document.getElementById("welcome").innerHTML="Welcome "+document.getElementById("uname").value;
+}
+function profile(){
+    
+}
+    </script>
+        <div class="header">
+            <img src="C:\books\videos\web_project\cart1.png" align="right" width="100" height="50">
+            <h1 align="left">Subhish Electronics Shopping</h1>
+            <div>
+                <p id="welcome"></p>
+            </div>
+        </div>
+        <div class="form-popup" id="myform">
+<form class="form-container" action="signin" method="post">
+ <h1>Login</h1>
+
+    <label for="username"><b>user name</b></label>
+    <input type="text" placeholder="Enter user name" id="uname"  name="un" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" id="pwd" placeholder="Enter Password" name="pwd" required>
+    
+    <button type="submit" class="btn" id="submitted">Login</button>
+    <button type="button" class="btn cancel" onclick="closeform()">Close</button>
+  </form>
+</div>
+    <div class="div1"> <a href=""><span onclick="openform()" id="login">sign in</span>
+            <span id="profile" onclick="profile()">profile</span><!-- comment -->
+            <span id="logout" onclick="">logout</span>
+        </a></div>
+
+      
+    
+
+        <div class="menu">
+            <button class="tab" id="defaultopen" onclick="openPage('Home', this, 'red')">Home</button>
+            <button class="tab" onclick="openPage('products', this, 'red')">All products</button>
+            <button class="tab" onclick="openPage('discount', this, 'red')">Discount</button>
+            <button class="tab" onclick="openPage('customer_care', this, 'red')">Customer care</button>
+        </div>
+        <div class="col">
+            <div class="row">
+                <form action="phone.jsp">
+                    <td class="catalogue"><button><img src="C:\books\videos\web_project\phone.jpg"></button> </td>
+                    </form>
+                </div>
+            <div class="row">
+                <form action="computers" >
+                    <td class="catalogue"><button><img src="C:\books\videos\web_project\laptop.jpg" width="379" height="307"></button></td>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

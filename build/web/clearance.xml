@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<root>
+    <products>
+        <product>
+            <image>C:\books\videos\web_project\realme.jpg</image>
+        <brand>Realme</brand>
+        <MRP>7500</MRP>
+        <discount>10%</discount>
+        <color>Diamond Blue</color>
+        <Ram>2GB/32GB</Ram>
+        <discount_price></discount_price>
+        <save></save>
+        </product>
+        
+       <product>
+           <image>C:\books\videos\web_project\oppo.jpg</image>
+        <brand>oppo</brand>
+        <MRP>8500</MRP>
+        <discount>15%</discount>
+        <color>Red</color>
+        <Ram>3GB/32GB</Ram>
+        <discount_price></discount_price>
+        <save></save>
+        </product>
+        
+        <product>
+            <image>C:\books\videos\web_project\vivo.jpg</image>
+        <brand>Vivo</brand>
+        <MRP>9000</MRP>
+        <discount>10%</discount>
+        <color>Royal green</color>
+        <Ram>4GB/32GB</Ram>
+        <discount_price></discount_price>
+        <save></save>
+        </product>
+        
+        <product>
+            <image>C:\books\videos\web_project\msi.jpg</image>
+        <brand>MSI</brand>
+        <MRP>55000</MRP>
+        <discount>10%</discount>
+        <color>Royal Black</color>
+        <Ram>8GB/256SSD</Ram>
+        <discount_price></discount_price>
+        <save></save>
+        </product>
+        
+        <product>
+            <image>C:\books\videos\web_project\lenovo.jpg</image>
+        <brand>Lenovo</brand>
+        <MRP>60000</MRP>
+        <discount>20%</discount>
+        <color>Pure silver</color>
+        <Ram>8GB/256SSD</Ram>
+        <discount_price></discount_price>
+        <save></save>
+        </product>
+    </products>
+</root>

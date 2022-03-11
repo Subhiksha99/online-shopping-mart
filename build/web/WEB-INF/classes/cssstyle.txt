@@ -1,0 +1,9 @@
+.column{
+float: left;
+  width: 33.33%;
+  padding: 15px;
+   border: 10px solid transparent;
+  padding: 15px;
+  border-image: url(border.png) 30 stretch;
+  
+}
