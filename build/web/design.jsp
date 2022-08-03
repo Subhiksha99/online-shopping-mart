@@ -380,7 +380,7 @@
         </div>
         <div class="panel-body">
           
-                    <img src="C:\books\videos\web_project\phone.jpg">
+                    <img src="web_project\phone.jpg">
                     
         </div>
         <div class="panel-footer">
@@ -398,7 +398,7 @@
         </div>
         <div class="panel-body">
           
-                    <img src="C:\books\videos\web_project\laptop.jpg" width="379" height="307">
+                    <img src="web_project\laptop.jpg" width="379" height="307">
         </div>
         <div class="panel-footer">
           <h3>Starts from 30K</h3>
@@ -414,7 +414,7 @@
           <h1>Clearance Product</h1>
         </div>
         <div class="panel-body">
-            <img src="C:\books\videos\web_project\discount.jpg" width="300" height="300">
+            <img src="web_project\discount.jpg" width="300" height="300">
         </div>
         <div class="panel-footer">
           <h3>Discounts start from 10%</h3>
